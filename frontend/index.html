@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiongozi Connect - Jua Kiongozi Wako Amefanya Nini Leo</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🏛️ Kiongozi Connect</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#leaders">Leaders</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#discussions">Discussions</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="btn btn-secondary" id="loginBtn">Login</button>
+                    <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <h1>Connecting Leaders and Citizens</h1>
+                    <p>Jua Kiongozi Wako Amefanya Nini Leo</p>
+                    <p class="tagline">Transparency. Progress. Connection.</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary btn-lg">I'm a Leader</button>
+                        <button class="btn btn-secondary btn-lg">I'm a Citizen</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Home Section -->
+            <section id="home" class="home-section">
+                <div class="container">
+                    <h2>What Your Leaders Did Today</h2>
+                    <div id="feed" class="feed"></div>
+                </div>
+            </section>
+
+            <!-- Leaders Section -->
+            <section id="leaders" class="leaders-section">
+                <div class="container">
+                    <h2>Featured Leaders</h2>
+                    <div id="leaders-list" class="leaders-grid"></div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section">
+                <div class="container">
+                    <h2>Trending Projects</h2>
+                    <div id="projects-list" class="projects-grid"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Kiongozi Connect. Transparency. Progress. Connection.</p>
+                <p>Connecting Leaders and Citizens for a Better Kenya 🇰🇪</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.38.4/dist/main.iife.js"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
